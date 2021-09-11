@@ -399,6 +399,7 @@ header ul li:nth-child(3) a:hover {
 .social_signin {
   user-select: none;
   -webkit-user-drag: none;
+  margin-top: 10px;
 }
 
 .social_signin ion-icon {
@@ -510,9 +511,6 @@ hr {
   .swiper {
     transform: scale(0.9);
   }
-  .popup {
-    height: 107vh;
-  }
 }
 
 @media (max-width: 591px) {
@@ -551,6 +549,9 @@ hr {
   .signin_info h2 {
     margin-bottom: 20px;
     margin-top: -27px;
+  }
+  .popup .signin {
+    height: 550px;
   }
 }
 
