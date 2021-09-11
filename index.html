@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Components/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Facebook | 18jad</title>
+  </head>
+  <body class="preload">
+    <div class="popup">
+      <div class="back"></div>
+      <div class="signin">
+        <div class="close_popup">
+          <ion-icon name="close-circle-sharp"></ion-icon>
+        </div>
+        <div class="avatar">
+          <img class="signin_logo" src="./Components/logo.png" alt="" />
+        </div>
+        <div class="signin_info">
+          <h2>Sign In</h2>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address or phone number"
+            spellcheck="false"
+          />
+          <div class="password">
+            <input type="password" name="password" placeholder="Password" />
+            <div class="eye"><ion-icon name="eye-off-sharp"></ion-icon></div>
+            <a href="javascript:void(0);" class="forget">Forgotten password?</a>
+          </div>
+          <input type="button" value="Sign In" />
+          <div class="remember">
+            <input type="checkbox" name="Remember" />
+            <p>Remember me</p>
+          </div>
+          <div class="social_signin">
+            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </div>
+          <hr />
+          <div class="register">Create New Account</div>
+        </div>
+      </div>
+    </div>
+    <section class="main">
+      <header>
+        <a href="#" class="logo"
+          ><img src="./Components/logo.png" alt="Logo"
+        /></a>
+        <ul>
+          <li><a href="javascript:void(0);" class="active">Home</a></li>
+          <li><a href="javascript:void(0);">Support</a></li>
+          <li>
+            <a href="javascript:void(0);" class="sign_in" id="signin"
+              >Sign In</a
+            >
+          </li>
+        </ul>
+        <a href="#" class="download"
+          ><ion-icon name="download-outline"></ion-icon>Download App</a
+        >
+      </header>
+      <div class="contentBox">
+        <div class="text">
+          <h2>facebook</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+            a voluptates. Voluptatibus autem, fuga deleniti, quos laudantium
+            tempore provident dolorem, molestias quaerat dolore cumque
+            repellendus similique asperiores. Voluptatibus, deleniti molestias.
+          </p>
+          <h4>Download the app</h4>
+          <a
+            href="https://apps.apple.com/us/app/facebook/id284882215"
+            class="btn"
+            ><ion-icon name="logo-apple"></ion-icon>Apple Store</a
+          >
+          <a
+            href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en&gl=US"
+            class="btn"
+            ><ion-icon name="logo-google-playstore"></ion-icon>Play Store</a
+          >
+        </div>
+        <div class="imgBox">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <ul class="socials">
+          <li>
+            <a href="javascript:void(0);"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="javascript:void(0);"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="javascript:void(0);"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/18jad" target="_blank"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+    <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+  </body>
+</html>
