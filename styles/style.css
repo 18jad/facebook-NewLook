@@ -60,16 +60,12 @@ header ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: 0.2s all ease-out;
+  transition: 0.3s all;
 }
 
 header ul li:nth-child(1) a:hover,
 header ul li:nth-child(2) a:hover {
   color: #2d88ff;
-}
-
-header ul li:nth-child(3) a:hover {
-  background: #2167c2;
 }
 
 .download {
@@ -82,6 +78,7 @@ header ul li:nth-child(3) a:hover {
   color: #3b5998;
   padding: 10px;
   border-radius: 5px;
+  border: 3px solid transparent;
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: 0.2s all ease-out;
@@ -105,9 +102,21 @@ header ul li:nth-child(3) a:hover {
   background: #2d88ff;
   background-image: -webkit-linear-gradient(top, #2d88ff, #5184be);
   color: #fff;
-  padding: 10px 15px;
-  white-space: nowrap;
-  border-radius: 6px;
+  text-decoration: none;
+  padding: 8px 13px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1pt transparent;
+  transition: 0.3s all ease-out;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_in:hover {
+  background: #fff;
+  color: #2d88ff;
+  transform: scale(1.04);
+  box-shadow: 0 0 0 2pt #2d88ff;
 }
 
 .contentBox {
@@ -150,17 +159,19 @@ header ul li:nth-child(3) a:hover {
   font-size: 1.1em;
   margin: 5px 20px 5px 0;
   border-radius: 5px;
-  transition: 0.4s;
+  border: 3px solid transparent;
+  transition: 0.3s all ease-out;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .btn:hover {
-  background: transparent;
+  background: #fff;
   color: #2d88ff;
   border: 3px solid #2d88ff;
-  height: 22px;
-  transform: scale(1.05);
+  /* height: 22px; */
+  transform: scale(1.04);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.24);
 }
 
@@ -317,7 +328,7 @@ header ul li:nth-child(3) a:hover {
 
 .signin_info input[type="email"],
 [type="password"],
-[type="button"] {
+[type="submit"] {
   width: 400px;
   height: 44px;
 }
@@ -326,15 +337,22 @@ header ul li:nth-child(3) a:hover {
 [type="password"] {
   outline: none;
   border: 3px solid #ededed;
+  caret-color: #2d88ff;
   border-radius: 6px;
   padding: 0 10px;
   font-size: 16px;
+  transition: 0.3s border;
   box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 0.1);
 }
 
 .signin_info input[type="email"]::placeholder,
 [type="password"]::placeholder {
   color: #bababc;
+}
+
+.signin_info input[type="email"]:focus,
+[type="password"]:focus {
+  border: 3px solid #2d88ff;
 }
 
 .password {
@@ -370,7 +388,7 @@ header ul li:nth-child(3) a:hover {
   text-decoration: underline;
 }
 
-.signin_info input[type="button"] {
+.signin_info input[type="submit"] {
   width: 425px;
   border: none;
   outline: none;
@@ -383,7 +401,7 @@ header ul li:nth-child(3) a:hover {
   color: #fff;
 }
 
-.signin_info input[type="button"]:hover {
+.signin_info input[type="submit"]:hover {
   background-image: -webkit-linear-gradient(top, #4d96f5, #638cbb);
 }
 
@@ -453,6 +471,7 @@ hr {
   font-size: 16px;
   color: #fff;
   cursor: pointer;
+  user-select: none;
 }
 
 .register:hover {
@@ -523,10 +542,10 @@ hr {
   }
   .signin_info input[type="email"],
   [type="password"],
-  [type="button"] {
+  [type="submit"] {
     width: 340px;
   }
-  .signin_info input[type="button"] {
+  .signin_info input[type="submit"] {
     width: 360px;
   }
   .remember {
@@ -562,10 +581,10 @@ hr {
   }
   .signin_info input[type="email"],
   [type="password"],
-  [type="button"] {
+  [type="submit"] {
     width: 300px;
   }
-  .signin_info input[type="button"] {
+  .signin_info input[type="submit"] {
     width: 320px;
   }
   .remember {

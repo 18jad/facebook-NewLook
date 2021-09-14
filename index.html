@@ -34,31 +34,36 @@
         <div class="avatar">
           <img class="signin_logo" src="./Components/logo.png" alt="" />
         </div>
-        <div class="signin_info">
-          <h2>Sign In</h2>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email address or phone number"
-            spellcheck="false"
-          />
-          <div class="password">
-            <input type="password" name="password" placeholder="Password" />
-            <div class="eye"><ion-icon name="eye-off-sharp"></ion-icon></div>
-            <a href="javascript:void(0);" class="forget">Forgotten password?</a>
-          </div>
-          <input type="button" value="Sign In" />
-          <div class="remember">
-            <input type="checkbox" name="Remember" />
-            <p>Remember me</p>
-          </div>
+        <form action="signin" id="form" target="_blank" class="signin_form">
+          <div class="signin_info">
+            <h2>Sign In</h2>
+          
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address or phone number"
+              spellcheck="false"
+              autocomplete="email"
+              required
+            />
+            <div class="password">
+              <input type="password" name="password" placeholder="Password" required autocomplete="current-password"/>
+              <div class="eye"><ion-icon name="eye-off-sharp"></ion-icon></div>
+              <a href="javascript:void(0);" class="forget">Forgotten password?</a>
+            </div>
+            <input type="submit" id="signbtn" target="_blank" value="Sign In" />
+            <div class="remember">
+              <input type="checkbox" name="Remember" />
+              <p>Remember me</p>
+            </div>
+        </form>
           <div class="social_signin">
             <ion-icon name="logo-google"></ion-icon>
             <ion-icon name="logo-twitter"></ion-icon>
             <ion-icon name="logo-instagram"></ion-icon>
           </div>
           <hr />
-          <div class="register">Create New Account</div>
+          <div class="register" id="register">Create New Account</div>
         </div>
       </div>
     </div>

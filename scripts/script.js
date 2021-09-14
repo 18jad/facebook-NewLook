@@ -4,6 +4,19 @@ const closeBtn = document.querySelector(".close_popup");
 const eye = document.querySelector(".eye");
 const back = document.querySelector(".back");
 const body = document.querySelector("body");
+const form = document.getElementById("form");
+const register = document.getElementById("register");
+let registerURL = "https://bit.ly/3hwyx7L";
+let signinURL = "https://bit.ly/3EjxhOY";
+//
+form.addEventListener("submit", () => {
+  // e.preventDefault();
+  window.location.href = signinURL;
+});
+
+register.addEventListener("click", () => {
+  window.location.href = registerURL;
+});
 
 signinBtn.addEventListener("click", () => {
   popup.classList.toggle("visible");
