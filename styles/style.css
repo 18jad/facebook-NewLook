@@ -110,6 +110,7 @@ header ul li:nth-child(2) a:hover {
   transition: 0.3s all ease-out;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .sign_in:hover {
